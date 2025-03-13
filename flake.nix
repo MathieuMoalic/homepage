@@ -3,10 +3,7 @@
 
   outputs = {nixpkgs, ...}: {
     devShells.x86_64-linux.default = (import nixpkgs {system = "x86_64-linux";}).mkShell {
-      buildInputs = with nixpkgs.legacyPackages.x86_64-linux; [
-        nodejs_23
-        zola
-      ];
+      buildInputs = with nixpkgs.legacyPackages.x86_64-linux; [nodejs_23];
     };
   };
 }
