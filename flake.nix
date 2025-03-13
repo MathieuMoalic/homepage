@@ -6,7 +6,6 @@
       buildInputs = with nixpkgs.legacyPackages.x86_64-linux; [
         nodejs_23
         zola
-        bun
       ];
     };
   };

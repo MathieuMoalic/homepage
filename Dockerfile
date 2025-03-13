@@ -1,9 +1,11 @@
-FROM ghcr.io/getzola/zola:v0.17.1 as zola
-
-COPY . /project
-WORKDIR /project
-RUN ["zola", "build"]
+FROM node:23.5.0-alpine3.21 as frontend
+WORKDIR /app
+COPY package.json ./
+COPY package-lock.json ./
+RUN npm install
+COPY . .
+RUN npm run build
 
 FROM ghcr.io/static-web-server/static-web-server:2
 WORKDIR /
-COPY --from=zola /project/public /public
+COPY --from=frontend /app/build /public
