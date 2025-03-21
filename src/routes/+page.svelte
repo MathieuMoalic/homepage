@@ -29,30 +29,34 @@
 			About me <span class="inline-block">👨‍💻</span>
 		</h2>
 		<p class="mt-4 text-lg">
-			I grew up in Brittany, France, where I studied Physics at the
-			University of Rennes 1. I obtained my Bachelor's degree in Physics
-			in 2018. I then moved to pursue a Double Diploma Master's degree,
-			Master of Nanoscience and Nanotechnology in at the University of
-			Rennes 1 and Physics of Advances Materials for Energy Processing at
-			the Adam Mickiewicz University (AMU) in Poznań, Poland. I am
-			currently a PhD student at AMU working on my thesis "Numerical
+			I grew up in Brittany, France, where I discovered my passion for
+			physics. I completed my Bachelor’s degree in Physics at the
+			University of Rennes 1 in 2018. From there, I pursued a Double
+			Diploma Master’s, studying Nanoscience and Nanotechnology at Rennes
+			1 while also completing the Physics of Advanced Materials for Energy
+			Processing program at Adam Mickiewicz University (AMU) in Poznań,
+			Poland. I’m now a PhD student at AMU, researching “Numerical
 			Simulations of Collective Spin-Wave Dynamics in Complex Magnetic
-			Textures in Patterned Ferromagnetic Films". During my phd, I worked
-			on national and european projects, I am the PI of a NCN PRELUDIUM
-			grant "Designing an experimentally feasible two-dimensional magnonic
-			crystal for the demonstration of topologically protected spin
-			waves.". I was the first foreigner to receive the AMU fundation
-			scholarship in 2025.
+			Textures in Patterned Ferromagnetic Films.” During my PhD, I’ve
+			worked on both national and European projects and currently serve as
+			PI for an NCN PRELUDIUM grant titled “Designing an experimentally
+			feasible two-dimensional magnonic crystal for the demonstration of
+			topologically protected spin waves.” In 2025, I became the first
+			foreigner to receive the AMU Foundation scholarship.
 		</p>
 		<p class="mt-4 text-lg">
-			I attended 18 international conferences and workshops throughout
-			Europe and the Americas and helped organize 5 conferences. I have
-			published 10 papers in peer-reviewed journals. I co-supervised 5
-			Master's students and I have also taught micromagnetic simulation
-			classes for 2 years. I did two research internships, one at the
-			University of Vienna in Austria and the other at the University of
-			Porto in Portugal. I recieved 9 “Inicjatywa Doskonałości - Uczelnia
-			Badawcza” grants.
+			Throughout my doctoral studies, I have attended
+
+			<a href="/conferences" class="text-blue-500">
+				17 international conferences</a
+			>
+			and workshops across Europe and the Americas, and helped organize 5 events.
+			I have published 10 papers in peer-reviewed journals, co-supervised 5
+			Master’s students, and taught micromagnetic simulation classes for 2
+			years. Additionally, I completed research internships at the University
+			of Vienna in Austria and the University of Porto in Portugal. Along the
+			way, I’ve received 9 grants through the Inicjatywa Doskonałości – Uczelnia
+			Badawcza program. I also love climbing 🧗.
 		</p>
 	</div>
 </section>
