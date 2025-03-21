@@ -16,6 +16,8 @@
         <div class="flex space-x-6">
             <a href="/" class="hover:text-white"> Home </a>
             <a href="/publications" class="hover:text-white"> Publications </a>
+            <a href="/conferences" class="hover:text-white"> Conferences </a>
+            <a href="/projects" class="hover:text-white"> Projects </a>
         </div>
 
         <div class="flex space-x-6">
