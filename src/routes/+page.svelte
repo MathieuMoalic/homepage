@@ -51,12 +51,16 @@
 				17 international conferences</a
 			>
 			and workshops across Europe and the Americas, and helped organize 5 events.
-			I have published 10 papers in peer-reviewed journals, co-supervised 5
-			Master’s students, and taught micromagnetic simulation classes for 2
-			years. Additionally, I completed research internships at the University
-			of Vienna in Austria and the University of Porto in Portugal. Along the
-			way, I’ve received 9 grants through the Inicjatywa Doskonałości – Uczelnia
-			Badawcza program. I also love climbing 🧗.
+			I have published
+			<a href="/publications" class="text-blue-500"> 10 papers</a> in
+			peer-reviewed journals, co-supervised 5 Master’s students, and
+			taught micromagnetic simulation classes for 2 years. Additionally, I
+			completed research internships at the University of Vienna in
+			Austria and the University of Porto in Portugal. Along the way, I’ve
+			received 9 grants through the Inicjatywa Doskonałości – Uczelnia
+			Badawcza program. I like to tinker and build things, check out
+			<a href="/projects" class="text-blue-500"> my projects. </a> I also love
+			climbing 🧗.
 		</p>
 	</div>
 </section>

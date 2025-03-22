@@ -1,10 +1,15 @@
+<script lang="ts">
+    import { Github } from "lucide-svelte";
+</script>
+
 <section
-    class="bg-gray-800 flex flex-col md:flex-row-reverse items-center justify-center text-justify py-16 px-6"
+    class="bg-gray-700 flex flex-col md:flex-row-reverse items-center justify-center text-justify py-16 px-6"
 >
     <div class="max-w-2xl md:mr-10">
         <h2 class="text-4xl font-bold">
             Projects <span class="inline-block">🚀</span>
         </h2>
+
         <p class="mt-4 text-lg">
             I like to tinker and build things. I am passionate about open-source
             software and I enjoy contributing to projects that I use. I also
@@ -15,23 +20,39 @@
     </div>
 </section>
 <section
-    class="bg-gray-700 flex flex-col md:flex-row-reverse items-center justify-center text-justify py-16 px-6"
+    class="bg-gray-800 flex flex-col md:flex-row-reverse items-center justify-center text-justify py-16 px-6"
 >
     <div
         class="w-full md:w-1/2 flex justify-center md:justify-end mb-6 md:mb-0"
     >
-        <img
-            alt="amumax"
-            src="https://raw.githubusercontent.com/MathieuMoalic/amumax/refs/heads/main/screenshots/1.png"
-            class="w-full h-auto max-w-md border-4 border-gray-500 object-contain"
-        />
+        <a
+            href="https://raw.githubusercontent.com/MathieuMoalic/amumax/refs/heads/main/screenshots/1.png"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <img
+                alt="amumax"
+                src="https://raw.githubusercontent.com/MathieuMoalic/amumax/refs/heads/main/screenshots/1.png"
+                class="w-full h-auto max-w-md border-4 border-gray-500 object-contain"
+            />
+        </a>
     </div>
 
     <div class="max-w-2xl md:mr-10">
-        <h2 class="text-4xl font-bold">
-            Amumax
-            <span class="inline-block">🧲</span>
-        </h2>
+        <div class="flex items-center justify-between">
+            <h2 class="text-4xl font-bold flex items-center gap-2">
+                Amumax <span>🧲</span>
+            </h2>
+            <a
+                class="bg-gray-700 hover:bg-gray-600 text-gray-300 border border-gray-500 rounded-lg p-2 transition"
+                href="https://github.com/MathieuMoalic/amumax"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <Github class="w-5 h-5 text-gray-300" />
+            </a>
+        </div>
+
         <p class="mt-4 text-lg">
             Fork of mumax3 aimed at enhancing Python workflow integration.
             Includes improved WebUI and uses zarr for storing and accessing
@@ -39,14 +60,24 @@
         </p>
     </div>
 </section>
-<section class="bg-gray-800 py-16 px-6">
+<section class="bg-gray-700 py-16 px-6">
     <div
         class="flex flex-col md:flex-row-reverse items-center justify-center text-justify gap-10"
     >
         <div class="max-w-2xl md:mr-10">
-            <h2 class="text-4xl font-bold">
-                Groceries <span class="inline-block">🥦</span>
-            </h2>
+            <div class="flex items-center justify-between">
+                <h2 class="text-4xl font-bold flex items-center gap-2">
+                    Groceries <span>🥦</span>
+                </h2>
+                <a
+                    class="bg-gray-700 hover:bg-gray-600 text-gray-300 border border-gray-500 rounded-lg p-2 transition"
+                    href="https://github.com/MathieuMoalic/groceries-app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <Github class="w-5 h-5 text-gray-300" />
+                </a>
+            </div>
             <p class="mt-4 text-lg">
                 I wasn't happy with existing grocery list apps, so I built my
                 own. A simple, self-hostable web app to manage groceries and
@@ -58,32 +89,53 @@
         <div
             class="w-full md:w-1/2 flex justify-center md:justify-end mb-6 md:mb-0"
         >
-            <img
-                alt="groceries"
-                src="https://raw.githubusercontent.com/MathieuMoalic/groceries-app/refs/heads/main/screenshots.png"
-                class="w-full h-auto max-w-md border-4 border-gray-500 object-contain"
-            />
+            <a
+                href="https://raw.githubusercontent.com/MathieuMoalic/groceries-app/refs/heads/main/screenshots.png"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <img
+                    alt="groceries"
+                    src="https://raw.githubusercontent.com/MathieuMoalic/groceries-app/refs/heads/main/screenshots.png"
+                    class="w-full h-auto max-w-md border-4 border-gray-500 object-contain"
+                /></a
+            >
         </div>
     </div>
 </section>
 <section
-    class="bg-gray-700 flex flex-col md:flex-row-reverse items-center justify-center text-justify py-16 px-6"
+    class="bg-gray-800 flex flex-col md:flex-row-reverse items-center justify-center text-justify py-16 px-6"
 >
     <div
         class="w-full md:w-1/2 flex justify-center md:justify-end mb-6 md:mb-0"
     >
-        <img
-            alt="workouts"
-            src="https://raw.githubusercontent.com/MathieuMoalic/workouts/refs/heads/main/screenshots.png"
-            class="w-full h-auto max-w-md border-4 border-gray-500 object-contain"
-        />
+        <a
+            href="https://raw.githubusercontent.com/MathieuMoalic/workouts/refs/heads/main/screenshots.png"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <img
+                alt="workouts"
+                src="https://raw.githubusercontent.com/MathieuMoalic/workouts/refs/heads/main/screenshots.png"
+                class="w-full h-auto max-w-md border-4 border-gray-500 object-contain"
+            />
+        </a>
     </div>
 
     <div class="max-w-2xl md:mr-10">
-        <h2 class="text-4xl font-bold">
-            Workouts
-            <span class="inline-block">💪</span>
-        </h2>
+        <div class="flex items-center justify-between">
+            <h2 class="text-4xl font-bold flex items-center gap-2">
+                Workouts <span>💪</span>
+            </h2>
+            <a
+                class="bg-gray-700 hover:bg-gray-600 text-gray-300 border border-gray-500 rounded-lg p-2 transition"
+                href="https://github.com/MathieuMoalic/workouts"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <Github class="w-5 h-5 text-gray-300" />
+            </a>
+        </div>
         <p class="mt-4 text-lg">
             I wasn't happy with existing workout tracking apps, so I built my
             own. A full-stack web app to track workout sessions, exercises, and
@@ -92,7 +144,7 @@
         </p>
     </div>
 </section>
-<section class="bg-gray-800 py-16 px-6">
+<section class="bg-gray-700 py-16 px-6">
     <div
         class="flex flex-col md:flex-row-reverse items-center justify-center text-justify gap-10"
     >
