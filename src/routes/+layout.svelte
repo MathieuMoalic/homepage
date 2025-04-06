@@ -186,8 +186,8 @@
         <div class="text-center mb-4">
             <p class="text-md mt-2 flex space-x-1">
                 <Mail size={24} />
-                <a href="mailto:contact@matmoa.xyz" class="hover:text-white"
-                    >contact@matmoa.xyz</a
+                <a href="mailto:mathieu@matmoa.eu" class="hover:text-white"
+                    >mathieu@matmoa.eu</a
                 >
             </p>
         </div>
