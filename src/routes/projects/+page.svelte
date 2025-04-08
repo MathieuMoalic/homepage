@@ -23,7 +23,7 @@
     title="Amumax"
     icon="🧲"
     github="https://github.com/MathieuMoalic/amumax"
-    image="https://raw.githubusercontent.com/MathieuMoalic/amumax/refs/heads/main/screenshots/1.png"
+    image="./projects/amumax.avif"
     description="Fork of mumax3 aimed at enhancing Python workflow integration. Includes improved WebUI and uses zarr for storing and accessing data, making output processing significantly more efficient."
     reverse={true}
 />
@@ -32,7 +32,7 @@
     title="Boued"
     icon="🥦"
     github="https://github.com/MathieuMoalic/boued"
-    image="https://raw.githubusercontent.com/MathieuMoalic/boued/refs/heads/main/screenshots.png"
+    image="./projects/boued.avif"
     description="I wasn't happy with existing grocery list apps, so I built my own. A simple, self-hostable web app to manage groceries and shopping lists, built with a FastAPI backend and a SvelteKit frontend."
     reverse={false}
 />
@@ -41,7 +41,7 @@
     title="Pleustradenn"
     icon="💪"
     github="https://github.com/MathieuMoalic/pleustradenn"
-    image="https://raw.githubusercontent.com/MathieuMoalic/pleustradenn/refs/heads/main/screenshots.png"
+    image="./projects/pleustradenn.avif"
     description="I wasn't happy with existing workout tracking apps, so I built my own. A full-stack web app to track workout sessions, exercises, and progress — built with FastAPI + SQLModel backend and SvelteKit frontend."
     reverse={true}
 />
@@ -49,8 +49,8 @@
 <ProjectCard
     title="Custom Keyboard"
     icon="⌨️"
-    github=""
-    image="./split_keyboard.jpg"
-    description="I built a custom split keyboard from scratch. It uses QMK with several custom keymaps and layers for English, French, and Polish. I named it 'Clavarté', a portmanteau of 'clavier' and 'écarté' which mean 'keyboard' and 'split' in French."
+    github="https://github.com/mathieumoalic/qmk"
+    image="./projects/split_keyboard.avif"
+    description="I built a custom split keyboard from scratch. It uses QMK with several custom keymaps and layers for English, French, and Polish. I named it 'Clavarté', a portmanteau of 'clavier' and 'écarté' which mean 'keyboard' and 'split' in French. You can find my QMK keymaps on GitHub."
     reverse={false}
 />
