@@ -54,3 +54,12 @@
     description="I built a custom split keyboard from scratch. It uses QMK with several custom keymaps and layers for English, French, and Polish. I named it 'Clavarté', a portmanteau of 'clavier' and 'écarté' which mean 'keyboard' and 'split' in French. You can find my QMK keymaps on GitHub."
     reverse={false}
 />
+
+<ProjectCard
+    title="NixOS config"
+    icon="🐧"
+    github="https://github.com/mathieumoalic/nixconfig"
+    image="./projects/nixconfig.avif"
+    description="I have been using NixOS and HomeManager for a few years now. You can find my nix configuration that I use on my laptop, workstation, homeserver, GPU-nodes etc.."
+    reverse={true}
+/>

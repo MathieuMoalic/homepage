@@ -42,7 +42,10 @@
 			PI for an NCN PRELUDIUM grant titled “Designing an experimentally
 			feasible two-dimensional magnonic crystal for the demonstration of
 			topologically protected spin waves.” In 2025, I became the first
-			foreigner to receive the AMU Foundation scholarship.
+			foreigner to receive the AMU Foundation scholarship. I have won the
+			Intermag Sensor Challenge in 2022 and got 2nd place in the 2024
+			edition. Me and my team placed 3rd in the European Defense Tech Hub
+			hackathon in Warsaw.
 		</p>
 		<p class="mt-4 text-lg">
 			Throughout my doctoral studies, I have attended

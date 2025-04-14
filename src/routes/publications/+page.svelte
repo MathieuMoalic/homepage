@@ -26,7 +26,7 @@
             authors: "R Mehta, M Moalic, M Krawczyk, S Saha",
             journal: "Journal of Physics: Condensed Matter 35 (32), 324002",
             year: 2023,
-            link: "https://iopscience.iop.org/article/10.1088/1361-648X/acd15f/meta",
+            link: "https://iopscience.iop.org/article/10.1088/1361-648X/acd15f/pdf",
         },
         {
             title: "The role of non-uniform magnetization texture for magnon-magnon coupling in an antidot lattice",
@@ -60,7 +60,7 @@
         {
             title: "Spin dynamics in patterned magnetic multilayers with perpendicular magnetic anisotropy",
             authors:
-                "AB Maciej Krawczyk, Mateusz Zelent, Pawel Gruszecki, Mathieu Moalic, Olav ...",
+                "M Zelent, P Gruszecki, M Moalic, O Hellwig, A Barman, M Krawczyk",
             journal: "Solid State Physics 73, 51",
             year: 2022,
             link: "https://www.sciencedirect.com/science/article/abs/pii/S0081194722000029",
@@ -68,7 +68,7 @@
         {
             title: "Angle-dependent resonant dynamics of stripes and skyrmions in Re/Co/Pt multilayers",
             authors:
-                "SK Jena, K Lenz, M Zelent, M Moalic, A Lynnyk, A Pietruczik, ...",
+                "SK Jena, K Lenz, M Zelent, M Moalic, A Lynnyk, A Pietruczik, P Aleszkiewicz, E Milińska, J Lindner, A Wawro",
             journal: "arXiv preprint arXiv:2501.06865",
             year: 2025,
             link: "https://arxiv.org/pdf/2501.06865",
@@ -76,9 +76,9 @@
         {
             title: "Enhancement of dynamical coupling in artificial spin-ice systems by incorporating perpendicularly magnetized ferromagnetic matrix",
             authors: "SS Kunnath, M Zelent, M Moalic, M Krawczyk",
-            journal: "arXiv preprint arXiv:2411.14918",
+            journal: "Small Structures, 2400627",
             year: 2024,
-            link: "https://arxiv.org/pdf/2411.14918",
+            link: "https://onlinelibrary.wiley.com/doi/pdf/10.1002/sstr.202400627",
         },
     ];
 </script>
