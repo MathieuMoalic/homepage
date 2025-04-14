@@ -29,6 +29,6 @@ release:
     sleep 300
 
     # Step 7: SSH into the server and run the release script
-    ssh homeserver "just podman/boued'"
+    ssh homeserver "just podman/homepage'"
 
     echo "Version bumped to v$NEW_VERSION and pushed with tag."
