@@ -22,4 +22,13 @@ release:
     git push origin main
     git push origin "v$NEW_VERSION"
 
+    # Step 5: Print the new version
+    ssh homeserver "sh -c 'sed -i \"s/ghcr.io\/mathieumoalic\/homepage:[0-9]\+\.[0-9]\+\.[0-9]\+/ghcr.io\/mathieumoalic\/homepage:$NEW_VERSION/\" podman/justfile'"
+
+    # Step 6: Wait 5 minutes
+    sleep 300
+
+    # Step 7: SSH into the server and run the release script
+    ssh homeserver "just podman/boued'"
+
     echo "Version bumped to v$NEW_VERSION and pushed with tag."
