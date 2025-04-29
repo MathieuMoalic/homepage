@@ -6,21 +6,38 @@
   outputs = {nixpkgs, ...}: let
     system = "x86_64-linux";
     pkgs = nixpkgs.legacyPackages.${system};
+
     buildFrontend = pkgs.buildNpmPackage {
+      pname = "homepage";
+      version = "1.0.9";
       src = ./.;
       npmDepsHash = "sha256-7w/lpJO+W92l/YYMzAA0tqPHfGAF53jBA4XW2AaFXCo=";
-      version = "1.0.8";
-      pname = "homepage";
+
+      installPhase = ''
+        runHook preInstall
+        mkdir -p $out/build
+        cp -r build/* $out/build/
+        runHook postInstall
+      '';
     };
+
+    serveScript = pkgs.writeShellScriptBin "serve-homepage" ''
+      defaultPort=8080
+      PORT="''${1:-$defaultPort}"
+
+      echo "Serving static content from ${buildFrontend}/build on port $PORT"
+
+      exec ${pkgs.static-web-server}/bin/static-web-server \
+        --port "$PORT" \
+        --root ${buildFrontend}/build
+    '';
   in {
     apps.${system}.default = {
       type = "app";
-      program = "${pkgs.writeShellScriptBin "serve-static-site" ''
-        exec ${pkgs.static-web-server}/bin/static-web-server \
-          -p 8081 \
-          -d ${buildFrontend}/lib/node_modules/homepage/build
-      ''}/bin/serve-static-site";
+      program = "${serveScript}/bin/serve-homepage";
     };
+
+    packages.${system}.default = buildFrontend;
 
     devShells.${system}.default = pkgs.mkShell {
       buildInputs = with pkgs; [
