@@ -14,23 +14,44 @@
       npmDepsHash = "sha256-7w/lpJO+W92l/YYMzAA0tqPHfGAF53jBA4XW2AaFXCo=";
 
       installPhase = ''
-        runHook preInstall
         mkdir -p $out/build
         cp -r build/* $out/build/
-        runHook postInstall
       '';
     };
 
     serveScript = pkgs.writeShellScriptBin "serve-homepage" ''
-      defaultPort=8080
-      PORT="''${1:-$defaultPort}"
-
-      echo "Serving static content from ${buildFrontend}/build on port $PORT"
-
       exec ${pkgs.static-web-server}/bin/static-web-server \
-        --port "$PORT" \
+        --port ''${1} \
         --root ${buildFrontend}/build
     '';
+
+    service = {
+      config,
+      lib,
+      ...
+    }: {
+      options.services.homepage = {
+        enable = lib.mkEnableOption "Enable homepage web server for matmoa.eu";
+        port = lib.mkOption {
+          type = lib.types.port;
+          default = 8083;
+          description = "Port to serve the homepage on.";
+        };
+      };
+
+      config = lib.mkIf config.services.homepage.enable {
+        systemd.services.homepage = {
+          description = "Static homepage web server for matmoa.eu";
+          wantedBy = ["multi-user.target"];
+          after = ["network.target"];
+
+          serviceConfig = {
+            ExecStart = "${serveScript}/bin/serve-homepage ${toString config.services.homepage.port}";
+            Restart = "always";
+          };
+        };
+      };
+    };
   in {
     apps.${system}.default = {
       type = "app";
@@ -44,5 +65,6 @@
         nodejs_23
       ];
     };
+    nixosModules.homepage-service = service;
   };
 }
