@@ -138,6 +138,14 @@
             abstract: "./abstracts/17.pdf",
             presentation: "./presentations/17.pdf",
         },
+        {
+            title: "Efficient generation of the second-harmonic propagating spin waves in a thin out-of-plane magnetized ferromagnetic film.",
+            name: "14th International Symposium on Hysteresis Modeling and Micromagnetics",
+            location: "Torino, Italy",
+            year: 2024,
+            abstract: "./abstracts/18.pdf",
+            presentation: "./presentations/18.html",
+        },
     ];
 </script>
 
