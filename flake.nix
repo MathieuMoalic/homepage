@@ -12,6 +12,10 @@
       version = "1.0.9";
       src = ./.;
       npmDepsHash = "sha256-7w/lpJO+W92l/YYMzAA0tqPHfGAF53jBA4XW2AaFXCo=";
+      installPhase = ''
+        mkdir -p $out
+        cp -r build $out/
+      '';
     };
 
     service = {
@@ -68,12 +72,12 @@
                 "--host"
                 cfg.host
                 "--root"
-                "${buildFrontend}/lib/node_modules/homepage/build"
+                "${buildFrontend}/build/"
               ];
               Restart = "on-failure";
 
               # These are the security settings for the service
-              ReadOnlyPaths = ["${buildFrontend}/lib/node_modules/homepage/build"];
+              ReadOnlyPaths = ["${buildFrontend}"];
               CapabilityBoundingSet = "";
               RestrictAddressFamilies = "AF_UNIX AF_INET AF_INET6"; # Allows Unix sockets and IPv4/IPv6
               SystemCallFilter = "~@clock @cpu-emulation @keyring @module @obsolete @raw-io @reboot @swap @resources @privileged @mount @debug";
@@ -101,7 +105,6 @@
               ProcSubset = "pid";
               SocketBindAllow = ["tcp:${toString cfg.port}"];
               SocketBindDeny = "any";
-              IPAddressDeny = ["any"];
 
               LimitNOFILE = 1024;
               LimitNPROC = 64;
@@ -123,6 +126,7 @@
     devShells.${system}.default = pkgs.mkShell {
       buildInputs = with pkgs; [
         nodejs_23
+        static-web-server
       ];
     };
     nixosModules.homepage-service = service;
