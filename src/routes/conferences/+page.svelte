@@ -146,6 +146,22 @@
             abstract: "./abstracts/18.pdf",
             presentation: "./presentations/18.html",
         },
+        {
+            title: "Efficiency Second-Harmonic Propagation of Spin Waves in Thin Ferromagnetic Films with Out-of-Plane Magnetization",
+            name: "Joint European Magnetic Symposia",
+            location: "Frankfurt, Germany",
+            year: 2025,
+            abstract: "./abstracts/19.pdf",
+            presentation: "./presentations/19.pdf",
+        },
+        {
+            title: "Higher Harmonic Spin Wave Generation Using Out-of-Plane Magnetized Films with Localized In-Plane Magnetization",
+            name: "Swiss Nanomagnetism Summit",
+            location: "Zurich, Switzerland",
+            year: 2025,
+            abstract: "./abstracts/20.pdf",
+            presentation: "./presentations/20.pdf",
+        },
     ];
 </script>
 
