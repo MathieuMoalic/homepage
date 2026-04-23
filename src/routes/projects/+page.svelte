@@ -13,12 +13,13 @@
         <p class="mt-4 text-lg">
             I like to tinker and build things. I am passionate about open-source
             software and I enjoy contributing to projects that I use. I also
-            really care about privacy so I try to self-host as much as possible
-            which is why I have close to 40 podman containers running on my
+            really care about privacy so I try to self-host as much as possible,
+            which is why I have close to 40 Podman containers running on my
             homeserver. Here are some of the projects I am currently working on:
         </p>
     </div>
 </section>
+
 <ProjectCard
     title="Amumax"
     icon="🧲"
@@ -29,20 +30,20 @@
 />
 
 <ProjectCard
-    title="Boued"
+    title="Blaz"
     icon="🥦"
-    github="https://github.com/MathieuMoalic/boued"
+    github="https://github.com/MathieuMoalic/blaz"
     image="./projects/boued.avif"
-    description="I wasn't happy with existing grocery list apps, so I built my own. A simple, self-hostable web app to manage groceries and shopping lists, built with a FastAPI backend and a SvelteKit frontend."
+    description="A self-hosted recipe and shopping list manager with a Rust backend and Flutter frontend. It supports smart ingredient parsing, recipe import, shopping-list workflows, and cross-platform use through a web interface and Android app."
     reverse={false}
 />
 
 <ProjectCard
-    title="Pleustradenn"
+    title="Mont"
     icon="💪"
-    github="https://github.com/MathieuMoalic/pleustradenn"
+    github="https://github.com/MathieuMoalic/mont"
     image="./projects/pleustradenn.avif"
-    description="I wasn't happy with existing workout tracking apps, so I built my own. A full-stack web app to track workout sessions, exercises, and progress — built with FastAPI + SQLModel backend and SvelteKit frontend."
+    description="A personal fitness tracking app built with a Rust/Axum/SQLite backend and Flutter frontend. It supports workout logging, body-weight tracking, and run import/visualization with route maps, heart-rate, pace, elevation, and trend charts."
     reverse={true}
 />
 
@@ -60,6 +61,6 @@
     icon="🐧"
     github="https://github.com/mathieumoalic/nixconfig"
     image="./projects/nixconfig.avif"
-    description="I have been using NixOS and HomeManager for a few years now. You can find my nix configuration that I use on my laptop, workstation, homeserver, GPU-nodes etc.."
+    description="I have been using NixOS and HomeManager for a few years now. You can find my nix configuration that I use on my laptop, workstation, homeserver, GPU nodes, and other machines."
     reverse={true}
 />

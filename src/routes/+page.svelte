@@ -13,14 +13,17 @@
 			Hi, I'm Mathieu <span class="inline-block">👋</span>
 		</h2>
 		<p class="mt-4 text-lg">
-			I'm a Physics PhD student currently living in Poland. My research is
-			focused on the static and dynamic study of micromagnetic systems
-			such as coupled skyrmions, spin wave generations, antidot lattices.
-			To achieve it, I develop my own post processing and simulation
-			software as well as using MuMax3. I mostly use Python, Rust, and Go.
+			I’m a systems-focused software engineer and Physics PhD based in Poland.
+			My work sits at the intersection of high-performance computing,
+			scientific simulation, and software architecture. I develop numerical
+			simulation engines, post-processing libraries, and data workflows for
+			computational physics and AI-inspired systems, with a strong focus on
+			performance, maintainability, and developer experience. I mostly work
+			with Go, Python, Rust, and C++.
 		</p>
 	</div>
 </section>
+
 <section
 	class="bg-gray-800 flex flex-col md:flex-row-reverse items-center justify-center text-justify py-16 px-6"
 >
@@ -29,41 +32,37 @@
 			About me <span class="inline-block">👨‍💻</span>
 		</h2>
 		<p class="mt-4 text-lg">
-			I grew up in Brittany, France, where I discovered my passion for
-			physics. I completed my Bachelor’s degree in Physics at the
-			University of Rennes 1 in 2018. From there, I pursued a Double
-			Diploma Master’s, studying Nanoscience and Nanotechnology at Rennes
-			1 while also completing the Physics of Advanced Materials for Energy
-			Processing program at Adam Mickiewicz University (AMU) in Poznań,
-			Poland. I’m now a PhD student at AMU, researching “Numerical
-			Simulations of Collective Spin-Wave Dynamics in Complex Magnetic
-			Textures in Patterned Ferromagnetic Films.” During my PhD, I’ve
-			worked on both national and European projects and currently serve as
-			PI for an NCN PRELUDIUM grant titled “Designing an experimentally
-			feasible two-dimensional magnonic crystal for the demonstration of
-			topologically protected spin waves.” In 2025, I became the first
-			foreigner to receive the AMU Foundation scholarship. I have won the
-			Intermag Sensor Challenge in 2022 and got 2nd place in the 2024
-			edition. Me and my team placed 3rd in the European Defense Tech Hub
-			hackathon in Warsaw.
+			I grew up in Brittany, France, where I first developed a passion for
+			physics, mathematics, and building things. I completed my Bachelor’s
+			in Physics at the University of Rennes 1, then pursued a double-degree
+			Master’s between Rennes and Adam Mickiewicz University in Poznań,
+			Poland, specializing in nanoscience, magnetism, and computational
+			physics. I recently completed my PhD at AMU, where my research focused
+			on numerical simulations of collective spin-wave dynamics in complex
+			magnetic textures and patterned ferromagnetic films.
 		</p>
 		<p class="mt-4 text-lg">
-			Throughout my doctoral studies, I have attended
-
-			<a href="/conferences" class="text-blue-500">
-				17 international conferences</a
-			>
-			and workshops across Europe and the Americas, and helped organize 5 events.
-			I have published
-			<a href="/publications" class="text-blue-500"> 10 papers</a> in
-			peer-reviewed journals, co-supervised 5 Master’s students, and
-			taught micromagnetic simulation classes for 2 years. Additionally, I
-			completed research internships at the University of Vienna in
-			Austria and the University of Porto in Portugal. Along the way, I’ve
-			received 9 grants through the Inicjatywa Doskonałości – Uczelnia
-			Badawcza program. I like to tinker and build things, check out
-			<a href="/projects" class="text-blue-500"> my projects. </a> I also love
-			climbing 🧗.
+			Alongside my research, I have built software for simulation,
+			post-processing, visualization, and scientific workflows. I am the main
+			developer of
+			<a href="/projects" class="text-blue-500">AMUmax</a>,
+			a high-performance simulation framework written in Go, and I also work
+			on Python and Rust projects spanning data processing, tooling, and
+			full-stack applications. During my PhD, I contributed to both national
+			and European research projects and served as principal investigator of
+			an NCN PRELUDIUM grant on topologically protected spin waves.
+		</p>
+		<p class="mt-4 text-lg">
+			My work has been recognized through several awards, including winning
+			the INTERMAG Sensor Challenge in 2022 and 2024, receiving the AMU
+			Foundation Scholarship in 2025, placing 3rd at the European Defense
+			Tech Hub Hackathon in Warsaw in April 2025, and earning an Honorable
+			Mention at its second edition in December 2025. I have published
+			<a href="/publications" class="text-blue-500">13 papers</a>,
+			co-supervised 5 Master’s students, taught micromagnetic simulation
+			courses, and presented my work at
+			<a href="/conferences" class="text-blue-500">17 international conferences</a>.
+			I also enjoy tinkering, open-source development, and climbing 🧗.
 		</p>
 	</div>
 </section>
