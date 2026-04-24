@@ -9,14 +9,18 @@
 
     buildFrontend = pkgs.buildNpmPackage {
       pname = "homepage";
-      version = "1.0.9";
+      version = "1.0.13";
       src = ./.;
-      npmDepsHash = "sha256-7w/lpJO+W92l/YYMzAA0tqPHfGAF53jBA4XW2AaFXCo=";
+      npmDepsHash = "sha256-94+Piz88RCsjDbnB9ZKQPCWidWMJ1UdFQV5C3w0c0tY=";
       installPhase = ''
-        mkdir -p $out
-        cp -r build $out/
+        mkdir -p $out/build
+        cp -r build/* $out/build/
       '';
     };
+
+    runnable = pkgs.writeShellScriptBin "homepage" ''
+      exec ${pkgs.lib.getExe pkgs.static-web-server} --port 8080 --root ${buildFrontend}/build/ "$@"
+    '';
 
     service = {
       config,
@@ -121,7 +125,10 @@
         };
       };
   in {
-    packages.${system}.default = buildFrontend;
+    packages.${system} = {
+      default = runnable;
+      static = buildFrontend;
+    };
 
     devShells.${system}.default = pkgs.mkShell {
       buildInputs = with pkgs; [
