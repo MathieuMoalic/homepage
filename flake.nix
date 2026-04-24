@@ -9,7 +9,7 @@
 
     buildFrontend = pkgs.buildNpmPackage {
       pname = "homepage";
-      version = "1.0.13";
+      version = "1.0.14";
       src = ./.;
       npmDepsHash = "sha256-94+Piz88RCsjDbnB9ZKQPCWidWMJ1UdFQV5C3w0c0tY=";
       installPhase = ''
